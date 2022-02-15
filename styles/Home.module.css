@@ -71,6 +71,11 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  margin-top: 3rem;
+
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .card {
@@ -108,9 +113,52 @@
   margin-left: 0.5rem;
 }
 
+.search input{
+  margin-right: .5em;
+}
+
+.profile{
+  display: flex;
+  margin-top: 2em;
+}
+
+.profile-image{
+  margin-right: 2em;
+}
+
+.back a{
+  color: #0070f3;
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 600px){
+  .search input{
+    margin-right: 0;
+    margin-bottom: .5em;
+  }
+
+  .search input,
+  .search button{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .profile{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px){
+  .profile-image{
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
